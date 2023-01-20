@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-react-tailwind",
+  "name": "sofiarocha",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -18,6 +18,7 @@
     "postcss": "8.4.19",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
-    "autoprefixer": "10.4.13"
+    "autoprefixer": "10.4.13",
+    "classnames": "^2.3.1"
   }
 }
