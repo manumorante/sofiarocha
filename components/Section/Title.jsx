@@ -4,7 +4,7 @@ function Title({ children }) {
     <div
       className={cx(
         'SectionTitle',
-        'mb-4',
+        'py-6 px-8',
         'font-light text-xl text-darkend/50 dark:text-lightend/50'
       )}>
       {children}

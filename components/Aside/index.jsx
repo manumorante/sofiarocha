@@ -6,6 +6,8 @@ function Aside({ children }) {
     <aside
       className={cx(
         'Aside',
+        'relative',
+        'z-10',
         'w-full sm:w-sidebar',
         'px-8 pb-6 sm:pb-10',
         'flex flex-col',

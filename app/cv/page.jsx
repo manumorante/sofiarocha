@@ -28,6 +28,23 @@ export default function Page() {
           </div>
 
           <div className='hidden sm:block'>
+            <Aside.Item>
+              <div className='flex gap-3'>
+                <dl>
+                  <dt className='font-black text-3xl'>+680</dt>
+                  <dd className='uppercase text-sm'>Masajes realizados</dd>
+                </dl>
+                <dl>
+                  <dt className='font-black text-3xl'>+42</dt>
+                  <dd className='uppercase text-sm'>Reseñas positivas</dd>
+                </dl>
+                <dl>
+                  <dt className='font-black text-3xl'>300L</dt>
+                  <dd className='uppercase text-sm'>de aceite untado</dd>
+                </dl>
+              </div>
+            </Aside.Item>
+
             <Aside.Item
               title={t.idiomas}
               summary='Hablo castellano nativo y tengo niveles B2 y B1 en inglés y portugués, respectivamente.'>
@@ -59,38 +76,21 @@ export default function Page() {
                 <li>{t.observación}</li>
               </ul>
             </Aside.Item>
-
-            <Aside.Item>
-              <div className='flex gap-3'>
-                <dl>
-                  <dt className='font-black text-3xl'>+680</dt>
-                  <dd className='uppercase text-sm'>Masajes realizados</dd>
-                </dl>
-                <dl>
-                  <dt className='font-black text-3xl'>+42</dt>
-                  <dd className='uppercase text-sm'>Reseñas positivas</dd>
-                </dl>
-                <dl>
-                  <dt className='font-black text-3xl'>3</dt>
-                  <dd className='uppercase text-sm'>Ciudades</dd>
-                </dl>
-              </div>
-            </Aside.Item>
           </div>
         </Aside>
 
-        <main className='px-10'>
-          <div className='hidden sm:block'>
+        <main className='bg-gray-50 dark:bg-gray-900'>
+          <div className='hidden sm:block px-10'>
             <h1 className='mt-10 font-extrabold text-3xl'>{user.fullname}</h1>
             <h2 className='mb-5 font-light text-2xl'>{user.slogan}</h2>
 
-            <div className='mb-8 px-4 py-1 -mx-2 flex gap-2 rounded-full bg-gray-200 dark:bg-gray-800'>
+            <div className='mb-8 px-5 py-1 -mx-2 inline-flex gap-4 rounded-full bg-gray-200 dark:bg-gray-800'>
               <p className='font-bold'>{user.phone}</p>
               <p>{user.email}</p>
             </div>
           </div>
 
-          <div className='text-2xl italic my-8 -mx-3'>
+          <div className='text-2xl italic my-8 mx-5'>
             Me enorgullece ofrecer tratamientos personalizados en un ambiente acogedor. Reconocer y
             responder a las necesidades del cliente
           </div>
@@ -101,7 +101,7 @@ export default function Page() {
             <Jobs>
               <Jobs.Item
                 from='2022'
-                to='actual'
+                to='Actual'
                 rol='Masajista'
                 company='Centro de masajes MasVital'>
                 <p>
@@ -110,7 +110,7 @@ export default function Page() {
               </Jobs.Item>
 
               <Jobs.Item
-                from='2021'
+                from='Mayo'
                 to='2021'
                 tol='Masajista'
                 company='Baños Árabes Hammam Al Andalus'>

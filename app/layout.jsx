@@ -13,6 +13,9 @@ export default function RootLayout({ children }) {
         'bg-white text-darkend',
         'dark:bg-darkend dark:text-lightend'
       )}>
+      <head>
+        <meta property='og:image' content='/public/OG.jpg' />
+      </head>
       {children}
     </html>
   )

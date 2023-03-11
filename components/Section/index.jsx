@@ -2,7 +2,7 @@ import cx from 'clsx'
 import Title from './Title'
 
 function Section({ children }) {
-  return <div className={cx('Section my-10')}>{children}</div>
+  return <div className={cx('Section')}>{children}</div>
 }
 
 Section.Title = Title
