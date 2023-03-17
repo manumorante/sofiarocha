@@ -13,6 +13,7 @@ module.exports = {
       },
       aspectRatio: {
         A4: '8.27 / 11.69',
+        card: '384 / 224',
       },
     },
   },
