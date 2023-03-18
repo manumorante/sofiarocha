@@ -3,7 +3,16 @@ import Image from 'next/image'
 import { Logo } from 'components/Logo'
 
 export default function Home() {
-  const mainCx = cx('Home w-full h-full flex items-center justify-center')
+  const mainCx = cx(
+    'Home',
+    'w-full h-full',
+    'flex items-center justify-center',
+    //
+    'bg-cover',
+    'bg-center',
+    `bg-[url('/papers.jpg')]`
+  )
+
   const cardCx = cx(
     'Card',
     'relative',
@@ -23,7 +32,14 @@ export default function Home() {
     <div className={mainCx}>
       <div className={cardCx}>
         <Logo className={logoCx} />
-        <Image className={paperCx} width={384} height={224} src='/paper.jpg' alt='Paper' />
+        <Image
+          loading='eager'
+          className={paperCx}
+          width={384}
+          height={224}
+          src='/paper.jpg'
+          alt='Paper'
+        />
       </div>
     </div>
   )

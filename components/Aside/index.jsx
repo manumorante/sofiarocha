@@ -8,10 +8,10 @@ function Aside({ children }) {
         'Aside',
         'relative',
         'z-10',
-        'w-full sm:w-sidebar',
-        'px-8 pb-6 sm:pb-10',
+        'w-full md:w-sidebar',
+        'px-8 pb-6 md:pb-10',
         'flex flex-col',
-        'bg-gray-200 dark:bg-gray-800'
+        'bg-gray-200'
       )}>
       {children}
     </aside>

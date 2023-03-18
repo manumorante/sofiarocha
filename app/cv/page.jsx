@@ -1,22 +1,23 @@
 import { user, t } from 'public/data'
 import cx from 'clsx'
 import Image from 'next/image'
-import avatar from '/public/sofia-rocha.jpg'
 import { Aside, Jobs, Edus, Section, List, DL } from 'components'
 
 export default function Page() {
   return (
     <>
-      <div className={cx('flex flex-col sm:flex-row')}>
+      <div className={cx('flex flex-col md:flex-row')}>
         <Aside>
-          <div className='flex sm:w-full gap-6'>
+          <div className='flex md:w-full gap-6'>
             <Image
-              className='rounded-b-xl object-cover object-top w-1/2 sm:w-full'
-              src={avatar}
+              className='rounded-b-xl object-cover object-top w-1/2 md:w-full'
+              src='/sofia-rocha.jpg'
+              width={320}
+              height={360}
               alt='Sofia Rocha'
             />
 
-            <div className='sm:hidden'>
+            <div className='md:hidden'>
               <h1 className='mt-10 font-extrabold text-3xl'>{user.fullname}</h1>
               <h2 className='mb-5 font-light text-2xl'>{user.slogan}</h2>
 
@@ -27,7 +28,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className='hidden sm:block'>
+          <div className='hidden md:block'>
             <Aside.Item>
               <div className='flex gap-3'>
                 <dl>
@@ -79,20 +80,20 @@ export default function Page() {
           </div>
         </Aside>
 
-        <main className='bg-gray-50 dark:bg-gray-900'>
-          <div className='hidden sm:block px-10'>
+        <main className='bg-gray-50'>
+          <div className='hidden md:block px-10'>
             <h1 className='mt-10 font-extrabold text-3xl'>{user.fullname}</h1>
             <h2 className='mb-5 font-light text-2xl'>{user.slogan}</h2>
 
-            <div className='mb-8 px-5 py-1 -mx-2 inline-flex gap-4 rounded-full bg-gray-200 dark:bg-gray-800'>
+            <div className='mb-8 px-5 py-1 -mx-2 inline-flex gap-4 rounded-full bg-gray-200'>
               <p className='font-bold'>{user.phone}</p>
               <p>{user.email}</p>
             </div>
           </div>
 
           <div className='text-2xl italic my-8 mx-5'>
-            Me enorgullece ofrecer tratamientos personalizados en un ambiente acogedor. Reconocer y
-            responder a las necesidades del cliente
+            Reconocer y responder a tus necesidades. Tratamientos personalizados en un ambiente muy
+            acogedor.
           </div>
 
           <Section>

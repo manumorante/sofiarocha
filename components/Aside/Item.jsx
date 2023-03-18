@@ -19,7 +19,7 @@ function Item({ children, title, summary = 'No hay resumen' }) {
 function Default({ children, title }) {
   return (
     <>
-      <h5 className='font-light text-xl text-darkend/50 dark:text-lightend/50'>{title}</h5>
+      <h5 className='font-light text-xl text-darkend/50'>{title}</h5>
       {children}
     </>
   )
@@ -28,9 +28,7 @@ function Default({ children, title }) {
 function Summary({ children, title }) {
   return (
     <>
-      <h5 className='font-light uppercase text-md text-darkend/50 dark:text-lightend/50'>
-        {title}
-      </h5>
+      <h5 className='font-light uppercase text-md text-darkend/50'>{title}</h5>
       <p className='text-xl'>{children}</p>
     </>
   )
