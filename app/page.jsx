@@ -7,7 +7,11 @@ export default function Home() {
   const cardCx = cx(
     'Card',
     'relative',
-    'aspect-card p-8 scale-75 sm:scale-100',
+    'aspect-card p-8',
+    // Scale
+    'scale-[0.74]', // Jose Luis
+    'xs:scale-[0.84]', // Sofía y Kelsan
+    'xs:scale-[0.96]', // Manu
     'flex items-center justify-center',
     'text-[#6b6451] bg-[#faf5f4]',
     'shadow-xl'

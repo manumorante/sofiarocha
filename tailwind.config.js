@@ -3,6 +3,12 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   content: ['./app/**/*.{js,jsx}', './components/**/*.jsx'],
   theme: {
+    screens: {
+      // base iPhone SE (Jose Luis)
+      xs: '375px', // iPhone X (Sofía y Kelsan)
+      sm: '428px', // iPhone 12 Pro Max (Manu)
+      md: '768px', // Tablet & Desktop
+    },
     extend: {
       spacing: {
         sidebar: '20rem', // w-80
