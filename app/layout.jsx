@@ -18,7 +18,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang='es' className={htmlCx} style={{ backgroundColor: '#d0ceca' }}>
       <head>
-        <meta property='og:image' content='/public/OG.jpg' />
+        <meta
+          name='description'
+          content='Sofía Rocha, masajista profesional, masajes relajantes y terapéuticos para mejorar tu bienestar. Reserva una cita.'
+        />
+        <link rel='icon' href='/favicon.ico' />
+        <meta property='og:title' content='Sofía Rocha' />
+        <meta property='og:image' content='/og/sofia-rocha-masajista.jpg' />
+        <meta property='og:image:width' content='1200' />
+        <meta property='og:image:height' content='630' />
       </head>
       <body className={bodyCx}>{children}</body>
     </html>
